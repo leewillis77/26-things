@@ -1,0 +1,191 @@
+@import url('fonts.css');
+
+/**
+ * General keydown styling.
+ */
+body.deck-container {
+	height: 100%;
+	overflow: hidden;
+}
+
+.keydown.deck-container h2,
+.keydown.deck-container h3,
+.keydown.deck-container h4,
+.keydown.deck-container h5,
+.keydown.deck-container p,
+.keydown.deck-container li {
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.keydown.deck-container ul {
+  margin-left: 0;
+}
+
+/* Turn off deck.js navigation */
+.deck-prev-link,
+.deck-next-link {
+    display: none !important;
+}
+
+/*Turn off deck.js status */
+.deck-status {
+    display: none;
+}
+
+.keydown.deck-container,
+.keydown.deck-container .slide,
+.deck-container .slide {
+  background: #090909;
+}
+
+/**
+ * Heading styling
+ */
+.keydown.deck-container h1,
+.keydown.deck-container h2,
+.keydown.deck-container h3
+ {
+  font-weight: 200;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.keydown.deck-container .slide.full-background h1 {
+	top: 0.2em;
+	left: 0;
+	background-color: rgba(16,16,16,0.8);
+}
+
+.keydown.deck-container h1 {
+	font-family: "Raleway", "Helvetica Neue", sans-serif;
+}
+
+.keydown.deck-container h2 {
+  color: #61D8a2;
+  border-bottom-color: #ccc;
+}
+
+.keydown.deck-container h3 {
+  color: #f1acd7;
+  font-weight: 300;
+}
+
+/**
+ * General styles
+ */
+
+pre {
+	text-align: left;
+}
+
+.keydown.deck-container {
+	color: #efefef;
+}
+
+.keydown.deck-container pre {
+    border-color: #ccc;
+}
+
+.keydown.deck-container code {
+    color: #888;
+}
+
+.keydown.deck-container ul {
+	list-style-type: none;
+}
+
+.keydown.deck-container blockquote {
+	color: #efefef;
+	border-left: 4px solid #61d8a2;
+	padding: 0 0.5em;
+	margin: 1em 3em;
+}
+
+.keydown.deck-container blockquote p {
+	padding: 0.5em 0;
+	text-align: left;
+}
+
+.keydown.deck-container blockquote a {
+	color: #f1acd7;
+}
+
+.keydown.deck-container a,
+.keydown.deck-container a:hover,
+.keydown.deck-container a:visited {
+	color: #f1acd7;
+	border-bottom: 1px dashed #ccc;
+  font-weight: 200;
+}
+
+.keydown.deck-container .slide .attribution {
+	background-color: rgba(16,16,16,0.9);
+	bottom: 0;
+	right: 0;
+	left: auto;
+	padding: 0 1em;
+	font-size: smaller;
+}
+
+.keydown.deck-container .slide .attribution:before {
+	content: "Source: ";
+}
+
+.tipno {
+    background: #61d8a2;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    color: #000;
+    text-shadow: 0px 0px 2px #fff;
+    font-weight: bold;
+    font-family: 'Frijole', cursive !important;
+}
+
+.tipno:before, .tipno:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: #61d8a2;
+    z-index: -2;
+}
+.tipno:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+.tipno:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+/**
+ * Styling for pages with full backgrounds
+ */
+.keydown.deck-container .slide.full-background h1,
+.keydown.deck-container h1 {
+  color: #efefef;
+}
+
+/**
+ * Page specific styles
+ */
+section.slide.title h1 {
+	text-align: center;
+	color: #DDFB3F;
+}
+
+section.slide.title h2 {
+	text-align: center;
+	color: #efefef;
+}
