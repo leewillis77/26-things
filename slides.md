@@ -74,6 +74,8 @@
 &nbsp;
 ![druplicon](images/druplicon.png)
 
+## *You* knew that right?
+
 !SLIDE
 
 # First class mistake-maker
@@ -137,8 +139,8 @@
 !SLIDE
 
 # Contribute back
-* Plugins you depend on
-* WordPress core
+* Modules you depend on
+* Drupal core
 * Other code
 
 !SLIDE
@@ -161,16 +163,10 @@
 
 !SLIDE
 
-
-Engage
-======
-
 ## Stand on the giants' shoulders
-* @tommcfarlin&nbsp;&nbsp;&nbsp;@otto42&nbsp;&nbsp;&nbsp;@nacin
-* @curtismchale&nbsp;&nbsp;&nbsp;@js_zao&nbsp;&nbsp;&nbsp;@markjaquith
-* @pollyplummer&nbsp;&nbsp;&nbsp;@justintadlock
-
-[https://twitter.com/leewillis77/lists/giants](https://twitter.com/leewillis77/lists/giants)
+* @mikebell_&nbsp;&nbsp;&nbsp;@webchick&nbsp;&nbsp;&nbsp;@learningdrupal
+* @dries&nbsp;&nbsp;&nbsp;@lullabot&nbsp;&nbsp;&nbsp;@eaton
+* @Crell&nbsp;&nbsp;&nbsp;@drupal8changes
 
 <div class="tipno">#7</div>
 
@@ -199,9 +195,6 @@ Engage
 <img src="images/bear-programming.jpg">
 
 !SLIDE
-![Sure, I'm a better person, but I can haz code now??](images/hazcodenow.jpg)
-
-!SLIDE
 <blockquote class="twitter-tweet">
 	<p>When your software has a large install base you get a new appreciation for just how difficult it is to make major changes.</p>
 	<p>&mdash; Carl Hancock (@carlhancock) <a href="https://twitter.com/carlhancock/status/327973124475858945">April 27, 2013</a></p>
@@ -222,31 +215,32 @@ Engage
 
 # PHP Version compatibility
 
-* Know WordPress supported versions
+* Know Drupal supported versions
 * Take time to understand what is / isn't available
-* Test against PHP 5.2
+* Test against PHP 5.2.5
 
 <div class="tipno">#11</div>
 
 !SLIDE 
 
 Use Vagrant to mimic minimimum requirements for testing
-* [Varying Vagrant Vagrants](https://github.com/10up/varying-vagrant-vagrants)
-
+* [Parrot](https://github.com/computerminds/parrot)
+* [DrupalDev nginx](https://github.com/mikebell/drupaldev-nginx)
 
 !SLIDE
-
 # Common gotchas
 
-* Not using WordPress APIs
-* [Hardcoded paths](http://codex.wordpress.org/Determining_Plugin_and_Content_Directories)
-* Short PHP tags 
+* Not using Drupal APIs
+* Hardcoded paths
+* Short PHP tags
+* Not checking that variables are set
+
 <div class="tipno">#12</div>
 
 !SLIDE
 
 # Escape input
-* Use &amp; understand [$wpdb->prepare](http://codex.wordpress.org/Class_Reference/wpdb#Protect_Queries_Against_SQL_Injection_Attacks)
+* Use &amp; understand [db_query](https://drupal.org/node/310072)
 * It's <strong>your users'</strong> security &mdash; not just your own
 
 <div class="tipno">#13</div>
@@ -267,7 +261,7 @@ Use Vagrant to mimic minimimum requirements for testing
 
 Then read this:
 
-[Escaping API updates for WordPress 2.8](http://markjaquith.wordpress.com/2009/06/12/escaping-api-updates-for-wordpress-2-8/)
+[https://api.drupal.org/api/drupal/includes!common.inc/group/sanitization/7](https://api.drupal.org/api/drupal/includes!common.inc/group/sanitization/7)
 
 <div class="tipno">#14</div>
 
@@ -353,16 +347,16 @@ mysql> select * from sessions ;
 * [xdebug](http:/xdebug.org)
 * [xhprof](http://techportal.inviqa.com/2013/10/01/profiling-php-applications-with-xhgui/)
 * [Kint](https://github.com/raveren/kint)
+* [Devel](http://drupal.org/project/devel)
 
 <div class="tipno">#19</div>
 
 !SLIDE
-# WordPress specific
-* [WordPress extensions for your editor](https://github.com/purplefish32/sublime-text-2-wordpress)
-* [WordPress coding standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
-* [Debug Bar](http://wordpress.org/plugins/debug-bar/)
-* [VIP Scanner](https://github.com/Automattic/vip-scanner) & [Review Guidelines](http://vip.wordpress.com/documentation/code-review-what-we-look-for/)
-* define('WP_DEBUG', true);
+# Drupal specific
+* [Drupal extensions for your editor](https://github.com/juhasz/drupal_sublime-snippets)
+* [Drupal coding standards](https://drupal.org/coding-standards)
+* [Coder module](https://drupal.org/project/coder) & [pareview.sh](http://pareview.sh/)
+* Turn error logging on & *check it*
 
 <div class="tipno">#20</div>
 
@@ -389,11 +383,10 @@ mysql> select * from sessions ;
 <div class="tipno">#23</div>
 
 !SLIDE
-# Remember the giants?
-* [Tom Mcfarlin's plugin boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate)
-* [_s](http://underscores.me/)
-* [Chef cookbook to setup WordPress](https://github.com/francescolaffi/chef-wp-cli)
-* [markjaquith/WordPress-Skeleton](https://github.com/markjaquith/WordPress-Skeleton)
+
+* Hydrant base install
+* Starter theme
+* Pre-built features?
 
 !SLIDE
 
@@ -406,7 +399,7 @@ mysql> select * from sessions ;
 !SLIDE
 
 * [Joomla!](http://joomla.org)
-* [Drupal](http://drupal.org)
+* [WordPress](http://wordpress.org)
 * [Symfony](http://symfony.com)
 * [Laravel](http://laravel.com)
 
@@ -427,7 +420,6 @@ mysql> select * from sessions ;
 * [Documentation marketing](http://www.warrenholmes.co.za/documentation-marketing/)
 
 <div class="tipno">#25</div>
-
 
 !SLIDE
 
@@ -456,5 +448,6 @@ mysql> select * from sessions ;
 
 !SLIDE
 
+* This work is licensed under
+* <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 * <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
-* This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
