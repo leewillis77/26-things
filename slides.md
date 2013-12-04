@@ -440,7 +440,7 @@ mysql> select * from sessions ;
 !SLIDE
 # Thank you for listening
 ## Lee Willis &mdash; @leewillis77
-### [leewillis77.github.io/26-things](https://leewillis77.github.io/26-things)
+### [https://github.com/leewillis77/26-things/tree/drupal](https://github.com/leewillis77/26-things/tree/drupal)
 
 !SLIDE
 # Beware off-by-one errors
